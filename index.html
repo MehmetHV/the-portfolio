@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehmet Koyuncu – Portfolio</title>
+    <style>
+        :root {
+            --bg: #050816;
+            --card: #0b1020;
+            --accent: #ff6b3d;
+            --text-main: #f7f7ff;
+            --text-muted: #c3c6d9;
+            --border: #1f2438;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #141b3f 0, var(--bg) 40%, #02030a 100%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 820px;
+            background: linear-gradient(145deg, rgba(15,17,35,0.95), rgba(7,10,24,0.98));
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            box-shadow:
+                0 28px 80px rgba(0,0,0,0.7),
+                0 0 0 1px rgba(255,255,255,0.02);
+            padding: 28px 24px 32px;
+        }
+
+        @media (min-width: 768px) {
+            .page {
+                padding: 36px 40px 40px;
+            }
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: clamp(28px, 4vw, 34px);
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        }
+
+        .title {
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .pill {
+            background: rgba(16, 21, 47, 0.95);
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            padding: 4px 10px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+
+        li {
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 6px;
+        }
+
+        .project {
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            padding: 8px 10px;
+            background: radial-gradient(circle at top left, rgba(255,107,61,0.06), rgba(5,8,22,0.9));
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .project-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .project a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            margin-top: 12px;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <div class="name">Mehmet Koyuncu</div>
+            <div class="title">Aspiring Developer & Data-Oriented Problem Solver</div>
+            <div class="contact">
+                <span>Stockholm, Sweden</span>
+                <span>•</span>
+                <a href="mailto:mehmetkoyuncuhv@gmail.com">mehmetkoyuncuhv@gmail.com</a>
+                <span>•</span>
+                <span>+46 704 910 306</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>
+                I’m a motivated developer interested in data, automation, and building practical tools.
+                I enjoy turning messy problems into simple, working solutions and I’m currently looking
+                for internship or junior opportunities where I can learn fast, contribute to real projects,
+                and grow with the team.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="pill-row">
+                <span class="pill">Python</span>
+                <span class="pill">SQL</span>
+                <span class="pill">Data processing</span>
+                <span class="pill">APIs</span>
+                <span class="pill">Git & GitHub</span>
+                <span class="pill">HTML & CSS</span>
+                <span class="pill">Problem solving</span>
+                <span class="pill">Teamwork</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="projects-list">
+                <article class="project">
+                    <div class="project-title">Internship AI – Resume & Cover Letter Generator</div>
+                    <div class="project-meta">Python · Streamlit · OpenAI API · PDF parsing</div>
+                    <p>
+                        A small web app that tailors resume bullets and cover letters to a specific job
+                        description. It supports PDF resume upload, extracts the text, and generates
+                        targeted output using an AI model.
+                    </p>
+                    <!-- Later: update this link when you push the code -->
+                    <!-- <a href="https://github.com/MehmetHV/intership-ai" target="_blank">View code</a> -->
+                </article>
+
+                <article class="project">
+                    <div class="project-title">Other projects</div>
+                    <p>
+                        Add 1–2 more short project descriptions here. They don’t need to be huge –
+                        even small tools, scripts, or school projects are worth showing.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience / Education</h2>
+            <p>
+                Add your education and any work or internship experience here in short bullet points.
+                Focus on responsibilities, tools you used, and what you learned.
+            </p>
+            <ul>
+                <li>Example: Consultant at Randstad – configured IT hardware and supported data workflows.</li>
+                <li>Example: Coursework / self-study in Python, SQL, and web development.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>
+                The easiest way to reach me is by email:
+                <a href="mailto:mehmetkoyuncuhv@gmail.com">mehmetkoyuncuhv@gmail.com</a>.
+                I’m happy to share more details, code samples, or talk about potential internship roles.
+            </p>
+        </section>
+
+        <footer>
+            Last updated: 2025
+        </footer>
+    </main>
+</body>
+</html>
